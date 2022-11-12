@@ -1,0 +1,19 @@
+{
+    "name": "Redirect Youtube Shorts",
+    "description": "Redirect youtube shorts UI to regular youtube UI.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background" : {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://www.youtube.com/*"
+    ]
+}
